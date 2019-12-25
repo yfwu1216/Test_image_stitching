@@ -101,10 +101,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\CompliedSource\opencv-3.4.1\include;D:\CompliedSource\tbb2018_20180822oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\CompliedSource\opencv-3.4.1\lib;D:\CompliedSource\tbb2018_20180822oss\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tbb_debug.lib;tbb.lib;opencv_aruco341d.lib;opencv_bgsegm341d.lib;opencv_bioinspired341d.lib;opencv_calib3d341d.lib;opencv_ccalib341d.lib;opencv_core341d.lib;opencv_datasets341d.lib;opencv_dnn341d.lib;opencv_dnn_objdetect341d.lib;opencv_dpm341d.lib;opencv_face341d.lib;opencv_features2d341d.lib;opencv_flann341d.lib;opencv_fuzzy341d.lib;opencv_hfs341d.lib;opencv_highgui341d.lib;opencv_imgcodecs341d.lib;opencv_imgproc341d.lib;opencv_img_hash341d.lib;opencv_line_descriptor341d.lib;opencv_ml341d.lib;opencv_objdetect341d.lib;opencv_optflow341d.lib;opencv_phase_unwrapping341d.lib;opencv_photo341d.lib;opencv_plot341d.lib;opencv_reg341d.lib;opencv_rgbd341d.lib;opencv_saliency341d.lib;opencv_shape341d.lib;opencv_stereo341d.lib;opencv_stitching341d.lib;opencv_structured_light341d.lib;opencv_superres341d.lib;opencv_surface_matching341d.lib;opencv_text341d.lib;opencv_tracking341d.lib;opencv_video341d.lib;opencv_videoio341d.lib;opencv_videostab341d.lib;opencv_xfeatures2d341d.lib;opencv_ximgproc341d.lib;opencv_xobjdetect341d.lib;opencv_xphoto341d.lib;opencv_cudaarithm341d.lib;opencv_cudabgsegm341d.lib;opencv_cudacodec341d.lib;opencv_cudafeatures2d341d.lib;opencv_cudafilters341d.lib;opencv_cudaimgproc341d.lib;opencv_cudalegacy341d.lib;opencv_cudaobjdetect341d.lib;opencv_cudaoptflow341d.lib;opencv_cudastereo341d.lib;opencv_cudawarping341d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
