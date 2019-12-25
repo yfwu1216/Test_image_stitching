@@ -1,30 +1,13 @@
-﻿========================================================================
-    控制台应用程序：Test_image_stitching 项目概述
-========================================================================
+This project was created to test opencv image stitching module with CUDA.
+You should use CMake to compile the opencv all module with CUDA and TBB.
 
-应用程序向导已为您创建了此 Test_image_stitching 应用程序。
+VS version: VS2015 recommended.
+CUDA version: CUDA8.0 or later.
+Opencv version: The default podfile will install openCV v3.4.1, with a hotfix for arm64 compataibility.
+TBB version: 2018_20180822oss or later, depend on your CPU.
 
-本文件概要介绍组成 Test_image_stitching 应用程序的每个文件的内容。
-
-
-Test_image_stitching.vcxproj
-    这是使用应用程序向导生成的 VC++ 项目的主项目文件，其中包含生成该文件的 Visual C++ 的版本信息，以及有关使用应用程序向导选择的平台、配置和项目功能的信息。
-
-Test_image_stitching.vcxproj.filters
-    这是使用“应用程序向导”生成的 VC++ 项目筛选器文件。它包含有关项目文件与筛选器之间的关联信息。在 IDE 中，通过这种关联，在特定节点下以分组形式显示具有相似扩展名的文件。例如，“.cpp”文件与“源文件”筛选器关联。
-
-Test_image_stitching.cpp
-    这是主应用程序源文件。
-
-/////////////////////////////////////////////////////////////////////////////
-其他标准文件:
-
-StdAfx.h, StdAfx.cpp
-    这些文件用于生成名为 Test_image_stitching.pch 的预编译头 (PCH) 文件和名为 StdAfx.obj 的预编译类型文件。
-
-/////////////////////////////////////////////////////////////////////////////
-其他注释:
-
-应用程序向导使用“TODO:”注释来指示应添加或自定义的源代码部分。
-
-/////////////////////////////////////////////////////////////////////////////
+test modules:
+1.image reading, 3-4x faster depend on your CPU.
+2.distortion correction, 4x faster.
+3.orb and surf descriptor computing, 3-5x faster.
+4.descriptor matching, 5-10x faster.
